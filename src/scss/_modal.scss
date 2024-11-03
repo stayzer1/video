@@ -1,0 +1,123 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper-custom,
+.modal__wrapper-custom-second {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  display: none;
+  .modal-custom {
+    background: #ececec;
+    padding: 25px;
+    border-radius: 5px;
+    width: clamp(20.625rem, 15.82rem + 19.714vw, 33.563rem);
+    // height: 316px;
+    border: 2px solid #acacac;
+    border-radius: 24px;
+    padding: 24px clamp(0.875rem, 0.271rem + 2.476vw, 2.5rem);
+  }
+  .modal-custom__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #000;
+    padding-bottom: 8px;
+  }
+  .modal-custom__descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+    padding-bottom: 32px;
+  }
+  .modal-custom__input-box {
+    position: relative;
+    height: 48px;
+    width: 300px;
+    margin: 0 auto;
+    input {
+      height: 48px;
+      width: 248px;
+      padding-left: 8px;
+      background: #fff;
+      border-radius: 0 12px 12px 0;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: rgba(0, 0, 0, 0.5);
+      border: none;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+  .modal-custom__input-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px 0 0 12px;
+    transform: translateX(5px);
+  }
+  .modal-custom__input-success {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .modal-custom__warning,
+  .modal-custom__warning-sms {
+    display: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #f20000;
+    margin-top: 16px;
+  }
+  .modal-custom__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 10px;
+    width: 301px;
+    height: 48px;
+    background: #2a39df;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+  .modal-custom__sms {
+    width: 300px;
+    height: 48px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  .modal-custom--sms-input {
+    padding: 7px 0;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    line-height: 34px;
+    margin: 0 auto;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  .modal-custom--sms-input:focus {
+    outline: none;
+  }
+}
